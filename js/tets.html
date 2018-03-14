@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+</head>
+<body>
+<script>
+   var cache = {};
+   var mult = function() {
+     var args = Array.prototype.join.call(arguments, ',');
+     if (cache[args]) {
+       return cache[args];
+     }
+     var a = 1;
+     for (var i = 0, l = arguments.length; i < l; i++) {
+       a = a * arguments[i];
+     }
+     return cache[args] = a ;
+   };
+   alert(mult(1,2,3));
+   alert(mult(2,3,4));
+
+</script>
+</body>
+</html>

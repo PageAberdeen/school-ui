@@ -1,0 +1,399 @@
+@media screen and (min-width:320px) and (max-width: 750px) {
+    html,body{-webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+    header{
+        width:100%;
+    }
+    .footer {
+    }
+
+    .logo{
+        vertical-align: middle;
+    }
+
+    .title{
+        font-size: 18px;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .btn{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        letter-spacing: 4px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .link-box{
+    }
+    .link-login{
+        display: none;
+    }
+    .link-menu{
+
+    }
+    .link-menu-btn{
+        width: 50px;
+        height: 60px;
+        background: url(../images/menu.svg) no-repeat 0 15px;
+        background-size: 30px;
+    }
+    .entrySection{
+        padding: 20px;
+    }
+
+    .entry-pdf{
+        margin: 10px 0 0 0;
+    }
+
+    .entry-list{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        box-shadow:8px 8px 10px #dedede;
+        -webkit-transition:none;
+    }
+    .entry-list:hover{
+        box-shadow:8px 8px 10px #dedede;
+    }
+
+    .entry-btn{
+        margin-top: 0;
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .entry-img, .entry-video{
+        height: 36px;
+        line-height: 28px;
+    }
+
+    .timeAxis{
+        display: block;
+    }
+    .timeAxis-item{
+        position: relative;
+        margin-top: 5px;
+        padding: 16px 0 14px 30px;
+        box-shadow: 0px 0px 10px 4px #dedede;
+    }
+
+    .timeAxis-item dt{
+        font-weight: bold;
+    }
+    .timeAxis-item-tip{
+        position: absolute;
+        left: -14px;
+        top: 14px;
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+    }
+
+    .timeAxis-blue{
+        border-top-right-radius:5px ;
+        border-left: 3px solid #0272B9;
+    }
+
+    .timeAxis-blue .timeAxis-item-tip{
+        background-color: #0272b9;
+    }
+
+    .timeAxis-lightBlue{
+        border-left: 3px solid #3FBDD0;
+    }
+
+    .timeAxis-lightBlue .timeAxis-item-tip{
+        background-color: #3FBDD0;
+    }
+
+    .timeAxis-green{
+        border-left: 3px solid #84C927;
+    }
+
+    .timeAxis-green .timeAxis-item-tip{
+        background-color: #84C927;
+    }
+
+    .timeAxis-pink{
+        border-left: 3px solid #ED728E;
+    }
+
+    .timeAxis-pink .timeAxis-item-tip{
+        background-color: #ED728E;
+    }
+
+    .timeAxis-orange{
+        border-bottom-right-radius: 5px;
+        border-left: 3px solid #F36014;
+    }
+
+    .timeAxis-orange .timeAxis-item-tip{
+        background-color: #F36014;
+    }
+    .news{
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .news-msg{
+        width: 100%;
+    }
+
+    .news-img{
+        float: left;
+        width: 100%;
+        display: none;
+    }
+
+    .modal-dialog{
+        width: 90%;
+    }
+
+    .modal-header-search{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+
+
+    .modal-header{
+        padding-bottom: 1px;
+    }
+
+    .modal-section-list{
+        width: 100%;
+    }
+
+
+    /*信息采集页面*/
+    .form-box{
+        padding: 10px;
+        width: 100%;
+    }
+    .msgTip{
+        width:100%
+    }
+    .form-msg-item{
+        float: left;
+        display: none;
+        width: 100%;
+    }
+
+    .form-msg-item.active{
+        display: block;
+    }
+
+    .addMsg{
+        float: left;
+        width: 100%;
+        padding:10px 10px;
+    }
+
+    .addMsg label{
+        vertical-align: middle;
+    }
+
+    .addMsg li input,
+    .addMsg select{
+        width: 64%;
+        height:30px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+
+    .entering-next-btn,
+    .entering-previous-btn
+    {
+        display: none;
+        float:left;
+        width: 50%;
+        height: 36px;
+        line-height: 34px;
+    }
+    /*js控制下方按钮*/
+    .entering-next-btn.active{
+        display: block;
+        width: 100%;
+    }
+
+    .entering-next-btn.tactive,
+    .entering-previous-btn.tactive{
+        display: block;
+    }
+
+    .entering-submit.tactive{
+        display: block;
+        float: left;
+        width: 50%;
+    }
+
+    .addMsg li{
+        width: 100%;
+    }
+
+    .btn-box{
+        overflow: auto;
+        margin: 0;
+        width: 100%;
+    }
+
+    .enterSection{
+        overflow: hidden;
+        margin: 10px 0;
+    }
+
+    .entering-modal{
+        padding: 10px;
+        min-height: 460px;
+        height:80%;
+    }
+    .notice-content{
+        overflow: auto;
+        margin: 10px 0;
+        height: 72%;
+    }
+
+    .entering-submit{
+        display: none;
+    }
+
+    /*预约时间*/
+    .appointment{
+        width: 100%;
+        height:auto;
+        position:static;
+    }
+    .appointment-left{
+        width: 100%;
+    }
+    .appointment-right{
+        width: 100%;
+        margin-bottom:60px;
+    }
+    .date-tab a{
+        padding: 8px 17px;
+    }
+    .time-menu li{
+        width: 100%;
+    }
+    .time-box{
+        height: auto;
+    }
+    .appointment-submit{
+        bottom: -34px;
+    }
+
+    .result{
+        width: 90%;
+        height: 200px;
+    }
+
+    /*新闻版块*/
+    .news-container{
+        width:100%;
+    }
+    .news-title{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .title{
+        font-size: 14px;
+    }
+}
+
+/*@media screen and (min-width:375px) and (max-width: 750px)  {
+    body{
+        height: auto;
+        overflow: auto;
+    }
+    header{
+        width:100%;
+        z-index: 9;
+    }
+    .footer{
+        position: relative;
+    }
+    .logo{
+        vertical-align: middle;
+    }
+
+    .title{
+        font-size: 14px;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    .link-box{
+    }
+    .link-login{
+        display: none;
+    }
+
+    .entrySection{
+        padding: 20px;
+    }
+
+    .entry-list{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        box-shadow:8px 8px 10px #dedede;
+        -webkit-transition:none;
+    }
+    .entry-list:hover{
+        box-shadow:8px 8px 10px #dedede;
+    }
+
+    .entry-btn{
+        margin-top: 0;
+        height: 45px;
+        line-height: 45px;
+    }
+    .timeAxis{
+        display: block;
+    }
+
+    .news{
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .news-msg{
+        width: 100%;
+    }
+
+    .news-img{
+        float: left;
+        width: 100%;
+        display: none;
+    }
+
+    .modal-dialog{
+        width: 90%;
+    }
+
+    .modal-header-search{
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .modal-header{
+        padding-bottom: 1px;
+    }
+
+    .modal-section-list{
+        width: 100%;
+    }
+}
