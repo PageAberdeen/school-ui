@@ -10,13 +10,13 @@
 </head>
 <body>
   <div class="modal indexModal">
-  <div class="close-tier"></div>
-  <div class="modal-dialog">
-    <span class="clear-modal"></span>
-    <div class="modal-header">
-      <input type="text" class="modal-header-search js-autoSearch" placeholder="请选择学区／或输入学校名称">
-    </div>
-    <ul class="modal-section clearfix"></ul>
+    <div class="close-tier"></div>
+    <div class="modal-dialog">
+      <span class="clear-modal"></span>
+      <div class="modal-header">
+        <input type="text" class="modal-header-search js-autoSearch" placeholder="请选择学区／或输入学校名称">
+      </div>
+      <ul class="modal-section clearfix"></ul>
   </div>
 </div>
   <header ></header>
@@ -28,7 +28,7 @@
           <dd class="entry-pdf"><a href="pdf/2017-test.pdf">本市户籍学龄儿童入学平台操作手册</a></dd>
           <dd class="entry-img">流程图</dd>
           <dd class="entry-video">视频演示</dd>
-          <dd class="entry-btn js-show-schoolList">本市户籍学龄儿童报名入口</dd>
+          <dd class="entry-btn"><a href="addStudent.html" class="link-stpStudent">本市户籍学龄儿童报名入口</a></dd>
         </dl>
       </li>
       <li class="entry-list ">
@@ -37,7 +37,7 @@
           <dd class="entry-pdf"><a href="pdf/2017-test.pdf">非本市户籍学龄儿童入学平台操作手册</a></dd>
           <dd class="entry-img">流程图</dd>
           <dd class="entry-video">视频演示</dd>
-          <dd class="entry-btn js-show-schoolList">非本市户籍学龄儿童报名入口</dd>
+          <dd class="entry-btn "><a href="addStudent.html" class="link-stpStudent">非本市户籍学龄儿童报名入口</a></dd>
         </dl>
       </li>
       <li class="entry-list">
@@ -77,8 +77,8 @@
     <ul class="news content clearfix">
       <li class="news-msg">
         <p class="news-msg-tab js-tab">
-          <a href="#municipalNews" class="municipal active ">市级政策</a>
-          <a href="#districtNews" class="district">区级政策</a>
+          <a href="#municipalNews" class="municipal active " onclick="return false">市级政策</a>
+          <a href="#districtNews" class="district" onclick="return false">区级政策</a>
           <span class="news-tab-bar"></span>
         </p>
         <ul id="municipalNews" class="news-list  active">

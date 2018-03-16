@@ -32,6 +32,30 @@ function createDistrict(){
   }
 }
 
+function OnStudentModal(trigger,typeBox,modal){//添加学生信息页面遮罩层公用方法
+  if(modal=== undefined){
+    modal=$('.student-type-modal');
+  }
+  trigger.on('click',function(){
+    modal.fadeIn(300);
+    typeBox.show();
+  })
+}
+function clearStudentModal(parent){
+  parent.children().hide();
+}
+OnStudentModal($('.js-studentStart'),$('.studentStart-box'));
+OnStudentModal($('.js-studentRun'),$('.studentRun-box'));
+OnStudentModal($('.js-studentEnd'),$('.studentEnd-box'));
+
+//end
+
+function foundSchool(){
+  $('.modal').fadeIn(400);
+  cDistrict();
+  $('.modal-section').append(frag)
+  OpenMask();
+}
 var cDistrict = new createDistrict();
   $('.modal').on('click','*',function(e){
     e.stopPropagation();
@@ -40,6 +64,7 @@ var cDistrict = new createDistrict();
       $('.modal-section').empty();
       $('.js-autoSearch').val('');
       CloseMask();
+      clearStudentModal($('.student-type-content'));//点击遮罩层其他处隐藏添加学生信息遮罩层所有元素
     };
     if($(this)[0].tagName=="LI"){
       var index = parseInt($(this).attr('val'));
@@ -50,7 +75,7 @@ var cDistrict = new createDistrict();
       }else{
         var str =encodeURI($(this).text())
         console.log(str)
-        window.location.href='login.html?'+str+''
+        window.location.href='login.html?'+str
       }
       $('.modal-section').empty();
       $('.modal-section').append(schoolFrag);
@@ -61,6 +86,7 @@ var cDistrict = new createDistrict();
       $('.modal-section').empty();
       $('.js-autoSearch').val('');
       CloseMask();
+      clearStudentModal($('.student-type-content'));//点击关闭按钮隐藏添加学生信息遮罩层所有元素
     })
 $('header').load('data/header.php')
 $('footer').load('data/footer.php')
@@ -83,19 +109,20 @@ var CloseMask = function()
 };
 
 $.ready(
-    
+    (function(){
+      if(window.location.search=="?type=district"){
+        foundSchool()
+      }
+    })(),
     $('.js-show-schoolList').on('click',function(){
-      $('.modal').fadeIn(400);
-      cDistrict();
-      $('.modal-section').append(frag)
-      OpenMask();
+      foundSchool()
     }),
-    $('header').on('click','li',function(){
+   /* $('header').on('click','li',function(){
       if($(this).attr('class')=='link-menu js-link-menu'){
         $('.mobil-search').slideToggle(500);
       }
      
-    }),
+    }),*/
     $('.js-tab').on('click','a',function(){
       $(this).addClass('active').siblings().removeClass('active');
       $($(this).attr('href')).addClass('active').siblings().removeClass('active');

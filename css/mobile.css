@@ -156,8 +156,9 @@
     }
 
     .modal-header-search{
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 35px;
+        padding-left: 10px;
     }
 
 
@@ -203,9 +204,16 @@
     .addMsg li input,
     .addMsg select{
         width: 64%;
-        height:30px;
+        height:35px;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 35px;
+        transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    }
+
+    .addMsg li input:focus,
+    .addMsg select:focus{
+        outline: none;
+        border-color: #409eff;
     }
 
 
@@ -215,8 +223,8 @@
         display: none;
         float:left;
         width: 50%;
-        height: 36px;
-        line-height: 34px;
+        height: 40px;
+        line-height: 38px;
     }
     /*js控制下方按钮*/
     .entering-next-btn.active{

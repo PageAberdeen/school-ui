@@ -3,7 +3,7 @@
 ?>
 <div class="content clearfix">
   <h1 class="title">
-    <img src="" class="logo" alt="logo">
+    <img src="images/logo.jpg" class="logo" alt="logo">
     <a href="index.html" class="title-tip">柳州市义务教育小学阶段入学服务平台</a></li>
   </h1>
   <ul class="link-box fr">
