@@ -10,15 +10,39 @@
 </head>
 <body>
   <div class="modal indexModal">
-    <div class="close-tier"></div>
-    <div class="modal-dialog">
-      <span class="clear-modal"></span>
-      <div class="modal-header">
-        <input type="text" class="modal-header-search js-autoSearch" placeholder="请选择学区／或输入学校名称">
+      <div class="close-tier"></div>
+      <div class="selectSchool">
+        <div class="modal-dialog selectSchool-modal">
+          <span class="clear-modal"></span>
+          <div class="modal-header">
+            <input type="text" class="modal-header-search js-autoSearch" placeholder="请选择学区／或输入学校名称">
+          </div>
+          <ul class="modal-section clearfix"></ul>
+        </div>
       </div>
-      <ul class="modal-section clearfix"></ul>
+      <div class="confirmSchool">
+        <div class="modal-dialog confirmSchool-modal">
+          <dl class="js-studentEnd studentBox clearfix">
+            <dt class="lf">
+              <img src="images/usercard.svg" alt="">
+            </dt>
+            <dd class="">姓名：大力</dd>
+            <dd class="">学生类型：随迁子女</dd>
+            <dd class="">身份证号：45020211213123XX55</dd>
+            <dd class="school-end">预约学校：弯塘路小学小学小学</dd>
+            <dd class="student-active student-active-end"></dd>
+          </dl>
+          <p class="modal-btnBox">
+            <a href="" class="btn cutover-btn js-cutover">重新选择</a>
+            <a href="addStudent.html" class="btn confirm-btn rt">确认投递</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
   </div>
-</div>
+  </div>
   <header ></header>
   <section class="entrySection">
     <ul class="entry content clearfix">

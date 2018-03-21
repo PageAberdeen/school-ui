@@ -75,10 +75,13 @@ var cDistrict = new createDistrict();
       }else{
         //var str =encodeURI($(this).text())
           var str = $(this).text();
-        if(confirm('您即将投递的学校为'+str)){
+          $('.selectSchool').hide();
+          $('.confirmSchool').show();
+
+       /* if(confirm('您即将投递的学校为'+str)){
             window.location.href="addStudent.html"
         }
-
+        */
       }
       $('.modal-section').empty();
       $('.modal-section').append(schoolFrag);

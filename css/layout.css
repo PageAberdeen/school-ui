@@ -244,12 +244,46 @@ textarea:-ms-input-placeholder {
   left: 0;
   z-index: 10;
   margin: auto;
-  padding: 10px 35px;
   width: 600px;
   height: 420px;
   border-radius: 10px;
   background-color: #fff;
 }
+.selectSchool-modal{
+  padding: 10px 35px;
+}
+
+.confirmSchool{
+  display: none;
+}
+
+.confirmSchool .studentBox{
+  margin-top: 100px;
+  text-align: left;
+}
+
+
+.modal-btnBox{
+  padding: 0 10px;
+  width: 100%;
+}
+
+.cutover-btn,
+.confirm-btn{
+  width: 48%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff
+}
+
+.cutover-btn{
+  background-color: #F36014;
+}
+
+.confirm-btn{
+  background-color:#1db0b8;
+}
+
 .clear-modal {
   position: absolute;
   top: 0;
@@ -772,4 +806,17 @@ textarea:-ms-input-placeholder {
 .studentRun-box,
 .studentEnd-box {
   display: none;
+}
+
+.selectSchool{
+  width: 100%;
+  height: 100%;
+}
+
+.confirmSchool{
+  width: 100%;
+  height: 100%;
+}
+.indexModal-dialog{
+
 }
