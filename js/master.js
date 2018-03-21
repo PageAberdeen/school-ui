@@ -73,9 +73,12 @@ var cDistrict = new createDistrict();
           schoolFrag +='<li class="modal-section-list" sid="'+schoolDate[index][j].sid+'">'+schoolDate[index][j].sname+'</li>';
         }
       }else{
-        var str =encodeURI($(this).text())
-        console.log(str)
-        window.location.href='login.html?'+str
+        //var str =encodeURI($(this).text())
+          var str = $(this).text();
+        if(confirm('您即将投递的学校为'+str)){
+            window.location.href="addStudent.html"
+        }
+
       }
       $('.modal-section').empty();
       $('.modal-section').append(schoolFrag);
