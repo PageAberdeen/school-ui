@@ -26,6 +26,13 @@
         cursor: pointer;
     }
 
+    .cutover-btn {
+        background-color: #F36014;
+    }
+    .confirm-btn {
+        background-color: #1db0b8;
+    }
+
     .link-box{
     }
     .link-login{
