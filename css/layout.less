@@ -326,6 +326,18 @@ textarea:-ms-input-placeholder {
 }
 
 
+.appointment-form .big-confirm-btn{
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffff;
+  background: #1db0b8;
+}
+
 .clear-modal{
   position: absolute;
   top: 0;
@@ -401,7 +413,7 @@ a{
 .sendMsg-btn{
   position: absolute;
   right: 29px;
-  bottom: 8px;
+  top: -4px;
   width: 90px;
   height: 30px;
   line-height: 30px;
@@ -664,6 +676,7 @@ a{
 }
 
 .appointment-left{
+  overflow: auto;
   float: left;
   padding: 10px;
   width: 35%;
@@ -676,12 +689,15 @@ a{
   width: 140px;
   height: 140px;
   border-radius: 50%;
+  background: url(../images/schoolLogo.jpg) no-repeat center;
   background-color: #fff;
+  background-size: cover;
 }
 
 .appointment-left-text{
   margin-top: 20px;
   padding: 0 20px;
+  color:#fff;
 }
 
 .appointment-left-text h4{
@@ -770,14 +786,15 @@ a{
   float: left;
   margin: 10px 0;
   width: 50%;
+  vertical-align: middle;
 }
 
 .time-title{
   margin-bottom: 10px;
 }
-.appointment-footer{
+/*.appointment-footer{
   position: fixed;
-}
+}*/
 
 /*录取结果反馈页面*/
 
@@ -956,4 +973,11 @@ a{
 
 .confirmSchool-modal{
   height: 270px;
+}
+
+ p.error{
+   padding-left: 26px;
+   font-size: 12px;
+   text-align: left;
+   color: red;
 }
