@@ -32,17 +32,24 @@ function createDistrict(){
   }
 }
 
-function OnStudentModal(trigger,typeBox,modal){//添加学生信息页面遮罩层公用方法
+function OnStudentModal(trigger,typeBox,modal){//添加学生信息页面遮罩层公用方法  触发元素，对应遮罩层，共用遮罩层
   if(modal=== undefined){
     modal=$('.student-type-modal');
   }
   trigger.on('click',function(){
+    if($(this).attr('lx')==0){
+    
+    }
     modal.fadeIn(300);
     typeBox.show();
   })
 }
 function clearStudentModal(parent){
   parent.children().hide();
+}
+
+function changeLink(){
+
 }
 OnStudentModal($('.js-studentStart'),$('.studentStart-box'));
 OnStudentModal($('.js-studentRun'),$('.studentRun-box'));
