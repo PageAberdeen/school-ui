@@ -48,9 +48,6 @@ function clearStudentModal(parent){
   parent.children().hide();
 }
 
-function changeLink(){
-
-}
 OnStudentModal($('.js-studentStart'),$('.studentStart-box'));
 OnStudentModal($('.js-studentRun'),$('.studentRun-box'));
 OnStudentModal($('.js-studentEnd'),$('.studentEnd-box'));
@@ -81,14 +78,10 @@ var cDistrict = new createDistrict();
         }
       }else{
         //var str =encodeURI($(this).text())
-          var str = $(this).text();
+          //var str = $(this).text();
           $('.selectSchool').hide();
           $('.confirmSchool').show();
 
-       /* if(confirm('您即将投递的学校为'+str)){
-            window.location.href="addStudent.html"
-        }
-        */
       }
       $('.modal-section').empty();
       $('.modal-section').append(schoolFrag);
